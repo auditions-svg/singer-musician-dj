@@ -192,9 +192,39 @@ h2{
   .actions{margin-top:32px}
   .question,.result{min-height:510px}
 }
+
+/* Final primary CTA override */
+.contact-btn.contact-primary{
+  color:#111 !important;
+  border-color:var(--gold) !important;
+  background:linear-gradient(105deg,#dfb04a 0%,#f0cb6c 52%,#d8a238 100%) !important;
+  box-shadow:0 10px 22px rgba(213,164,71,.16) !important;
+}
+
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1236011905327462');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body>
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1236011905327462&ev=PageView&noscript=1"
+/></noscript>
+
 
 <input class="state" type="radio" name="flow" id="state-q1" checked>
 <input class="state" type="radio" name="flow" id="state-q2">
@@ -295,7 +325,8 @@ h2{
       <a class="contact-btn contact-primary"
          href="https://nethunt.com/service/automation/forms/64993f404356bf0008b68ca4?utm_source=reg-AdsT"
          target="_blank"
-         rel="noopener">
+         rel="noopener"
+         onclick="if (typeof fbq === 'function') { fbq('track', 'Lead'); }">
         <span class="contact-name">REGISTER ON WEBSITE</span>
         <span class="contact-handle">Complete your Rising Stars registration</span>
       </a>
@@ -306,14 +337,6 @@ h2{
          rel="noopener">
         <span class="contact-name">TELEGRAM</span>
         <span class="contact-handle">@alexa_rising_stars</span>
-      </a>
-
-      <a class="contact-btn"
-         href="https://wa.me/380685755321?text=Hi%21%20I%E2%80%99m%20a%20professional%20female%20singer%2C%20musician%20and%20DJ%2C%20and%20I%E2%80%99m%20interested%20in%20the%203-in-1%20cruise%20performer%20vacancy.%20I%E2%80%99d%20like%20to%20receive%20more%20details%20about%20the%20opportunity."
-         target="_blank"
-         rel="noopener">
-        <span class="contact-name">WHATSAPP</span>
-        <span class="contact-handle">Message our manager</span>
       </a>
 
       <a class="contact-btn" href="mailto:seo.rising.stars.talents@gmail.com?subject=Female%20Singer%20%2F%20Musician%20%2F%20DJ%20Cruise%20Contract&body=Hi%21%20I%E2%80%99m%20a%20professional%20female%20singer%2C%20musician%20and%20DJ%2C%20and%20I%E2%80%99m%20interested%20in%20the%203-in-1%20cruise%20performer%20vacancy.%20I%E2%80%99d%20like%20to%20receive%20more%20details%20about%20the%20opportunity.">
